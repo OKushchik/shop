@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productDetails</title>
+    <link rel="stylesheet" href="css/productDetails.css">
+    <link rel="stylesheet" href="fonts/fonts/style.css">
+    <link rel="stylesheet" href="fonts/iconFonts/css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="wrapper header">
+            <div class="comp-1">
+                <div class="header__logo">
+                    <a href="#">SH</a>
+                </div>
+                <div class="burger">
+                    <i class="icon i-ic_menu_48px"></i>
+                </div>
+                <nav class="header__menu header__menu-row">
+                    <ul>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Coming Soon</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="comp-2">
+                <div class="header__filter">
+                    <label for="filter"></label>
+                    <input id='filter' type="text" class="filter" placeholder="Search something...">
+                    <button class="header__filter-btn" id='filterBtn'><i class="icon i-search-solid"></i></button>
+                </div>
+                <div class="header__basket">
+                    <div class="header__basket-pic"><i class="icon i-shopping_bag-24px"></i></div>
+                    <p class="header__basket-link">Basket (<span>0</span>)</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <hr/>
+        </div>
+        <nav class="header__menu header__menu-column wrapper">
+            <ul>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Coming Soon</a></li>
+            </ul>
+            <hr/>
+        </nav>
+        <div class="currentLink wrapper">
+            <p>home/men</p>
+        </div>
+    </header>
+    <main>
+        <!--Slider-->
+        <section class="product">
+            <!--render in JS-->
+        </section>
+
+        <div class="carouselBlock wrapper">
+            <div id="carouselWrapper">
+                <div id="carousel">
+                    <div id="content">
+                        <img class="item" src="img/shoes-2465907_1280.jpg" alt="pic">
+                        <img class="item" src="img/autumn-leaves-1869837_1280.jpg" alt="pic">
+                        <img class="item" src="img/blue-2564660_1280.jpg" alt="pic">
+                        <img class="item" src="img/clothing-store-984396_1280.jpg" alt="pic">
+                        <img class="item" src="img/fashion-918446_1280.jpg" alt="pic">
+                        <img class="item" src="img/fashion-2591480_1280.jpg" alt="pic">
+                        <img class="item" src="img/fashion-1031469_1280.jpg" alt="pic">
+                        <img class="item" src="img/nike-5126389_1280.jpg" alt="pic">
+                        <img class="item" src="img/person-918986_1280.jpg" alt="pic">
+                        <img class="item" src="img/shoes-2465907_1280.jpg" alt="pic">
+                        <img class="item" src="img/shoes-1245920_1280.jpg" alt="pic">
+                        <img class="item" src="img/store-984393_1280.jpg" alt="pic">
+                        <img class="item" src="img/tie-690084_1280.jpg" alt="pic">
+                        <img class="item" src="img/travel-1749508_1280.jpg" alt="pic">
+                        <img class="item" src="img/vest-1031127_1280.jpg" alt="pic">
+                    </div>
+                </div>
+                <button id="prev"> < </button>
+                <button id="next"> > </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper footer">
+            <div class="footer__collectionBlock footerBlock">
+                <h4>collection</h4>
+                <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Coming Soon</a></li>
+                </ul>
+            </div>
+            <div class="footer__siteBlock footerBlock">
+                <h4>site</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Copyright Policy</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer__shopBlock footerBlock">
+                <h4>site</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Copyright Policy</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer__socialBlock footerBlock">
+                <h4>social</h4>
+                <p>Shoper is made with love in Warsaw, <br/>
+                    2014 © All rights reserved. El Passion</p>
+                <ul class="footer__socialBlock-links">
+                    <li><a href="#"><i class="icon i-twitter-brands"></i></a></li>
+                    <li><a href="#"><i class="icon icon-64 i-facebook-f-brands"></i></a></li>
+                    <li><a href="#"><i class="icon i-instagram-brands"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <section class="popup">
+        <p><i class="icon i-plus-solid"></i></p>
+        <h3>Please chose size and color</h3>
+    </section>
+</div>
+<script src="data/catalog.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/productDetails.js"></script>
+</body>
+</html>

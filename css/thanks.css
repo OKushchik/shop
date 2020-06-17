@@ -1,0 +1,237 @@
+body {
+    background: grey;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    background: white;
+}
+.wrapper {
+    padding: 0 35px 0 35px;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: white;
+}
+header .header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.comp-1, .comp-2 {
+    display: flex;
+}
+.header__logo {
+    display: inline;
+    padding: 15px 10px;
+    background: black;
+    max-height: 22px;
+}
+.header__logo:hover {
+    cursor: pointer;
+}
+.header__logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Lato-Regular, sans-serif;
+}
+.header__menu ul{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    list-style: none;
+}
+
+.header__menu li {
+    padding-right: 50px;
+}
+
+.header__menu a {
+    color: black;
+    text-decoration: none;
+    font-family: Lato-Regular, sans-serif;
+    position: relative;
+    text-align: center;
+}
+.header__menu a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    display: block;
+    left: 50%;
+    transform: translate(-50%);
+    background: #060606;
+    transition: width .5s;
+}
+.header__menu a:hover::after {
+    width: 100%;
+}
+.header__menu-column {
+    display: none;
+}
+.displayBLock {
+    display: block;
+}
+.burger {
+    display: none;
+}
+.header__filter {
+    display: flex;
+    vertical-align: top;
+
+}
+.header__filter-btn:hover {
+    cursor: pointer;
+}
+
+.header__filter input {
+    font-size: 15px;
+    display: inline-block;
+    font-family: Lato-Regular, sans-serif;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 0;
+    background: none;
+    transition: width 0.4s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#filterBtn {
+    width: 60px;
+    height: 40px;
+}
+.focus input {
+    border: 1px solid #BBB;
+    width: 250px;
+    height: 40px;
+    cursor: text;
+}
+.bg-grey {
+    background: #606060;
+    color: white;
+}
+.header__basket {
+    display: flex;
+    margin-left: 15px;
+}
+.header__basket .header__basket-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header__basket p {
+    padding-left: 10px;
+    font-family: Lato-Regular, sans-serif;
+}
+/*main*/
+.content {
+    padding: 100px 0;
+    text-align: center;
+}
+.content h1 {
+    font-family: "Myriad Pro REGULAR", sans-serif;
+    font-size: 92px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.content h2 {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 30px;
+    color: #b8b8b8;
+}
+
+/*FOOTER*/
+footer {
+    padding-top: 40px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.footer h4 {
+    text-transform: uppercase;
+    font-family: Lato-Bold, sans-serif;
+    font-weight: bold;
+}
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer a,
+.footer p {
+    text-decoration: none;
+    color: black;
+    font-family: Lato-Regular, sans-serif;
+}
+.footer__socialBlock-links {
+    display: flex;
+    flex-direction: row;
+}
+.footer__socialBlock-links li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3px;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+@media only screen and  (max-width: 1240px) {
+    header {
+        position: relative;
+    }
+    header .header{
+        padding-bottom: 5px;
+    }
+    .header__menu-row {
+        display: none;
+    }
+    .header__menu-column ul {
+        display: block;
+        text-align: center;
+    }
+    .header__menu-column li {
+        padding: 10px;
+    }
+    .burger {
+        display: block;
+        position: absolute;
+        left: 30px;
+        top: 125px;
+        font-size: 50px;
+    }
+    .footerBlock {
+        display: none;
+    }
+    .footerBlock:last-child {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer__socialBlock-links {
+        justify-content: center;
+    }
+}
+@media only screen and  (max-width: 768px) {
+    .comp-2 {
+        display: block;
+    }
+    .comp-2 .header__filter {
+        top: 50px;
+    }
+    .carouselBlock {
+        display: none;
+    }
+}
